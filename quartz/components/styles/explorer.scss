@@ -268,3 +268,33 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     overscroll-behavior: none;
   }
 }
+
+
+// 保留文件夹标题样式但移除链接效果
+.folder-title {
+  color: var(--darkgray);
+  font-weight: 600;
+  padding: 0.25rem 0;
+  cursor: default; // 禁用指针
+  
+  // 移除所有链接效果
+  &:hover, &:active, &:focus {
+    background: none;
+    text-decoration: none;
+    color: var(--darkgray); // 保持相同颜色
+  }
+}
+
+// 移除按钮悬停效果
+.folder-button {
+  &:hover {
+    background: none !important;
+    text-decoration: none !important;
+  }
+}
+
+// 确保文件夹名称正常显示
+.folder-container {
+  display: flex;
+  align-items: center;
+}

@@ -71,7 +71,27 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({ renderEngine: "mathjax",
+  mathjaxOptions: {
+    loader: { 
+      load: ['[tex]/ams'] 
+    },
+    tex: {
+      packages: {'[+]': ['ams']},
+      inlineMath: [              
+        ['$', '$'],
+        ['\\(', '\\)']
+      ],
+      displayMath: [             
+        ['$$', '$$'],
+        ['\\[', '\\]']
+      ],
+      processEscapes: true       
+    },
+    svg: {
+      fontCache: 'global'        
+    }
+  } }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

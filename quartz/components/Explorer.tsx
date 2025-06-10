@@ -56,7 +56,7 @@ export type FolderState = {
 }
 
 export default ((userOpts?: Partial<Options>) => {
-  const opts: Options = { ...defaultOptions, ...userOpts }
+  const opts: Options = { ...defaultOptions, ...userOpts，folderClickBehavior: "none" as any // 需要类型转换 }
   const { OverflowList, overflowListAfterDOMLoaded } = OverflowListFactory()
 
   const Explorer: QuartzComponent = ({ cfg, displayClass }: QuartzComponentProps) => {
@@ -125,33 +125,34 @@ export default ((userOpts?: Partial<Options>) => {
           </li>
         </template>
         <template id="template-folder">
-          <li>
-            <div class="folder-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="5 8 14 8"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="folder-icon"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-              <div>
-                <button class="folder-button">
-                  <span class="folder-title"></span>
-                </button>
-              </div>
-            </div>
-            <div class="folder-outer">
-              <ul class="content"></ul>
-            </div>
-          </li>
-        </template>
+  <li>
+    <div class="folder-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="12"
+        viewBox="5 8 14 8"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="folder-icon"
+      >
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+      <div>
+        {/* 保留按钮结构但移除链接功能 */}
+        <button class="folder-button" style="background: none; border: none; padding: 0; cursor: default;">
+          <span class="folder-title"></span>
+        </button>
+      </div>
+    </div>
+    <div class="folder-outer">
+      <ul class="content"></ul>
+    </div>
+  </li>
+</template>
       </div>
     )
   }
