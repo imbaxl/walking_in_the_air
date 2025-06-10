@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"afba094f6526e332","x":340,"y":480,"width":250,"height":60,"type":"text","text":"$\\beta \\in U$"},
+		{"id":"2f9acf4dc704d1f4","x":0,"y":720,"width":300,"height":120,"type":"text","text":"充分性：\n$\\beta\\in (U^\\perp)^\\perp$"},
+		{"id":"f8f470da73e9e1c6","x":-200,"y":450,"width":250,"height":60,"type":"text","text":"$(U^\\perp)^\\perp=U$"},
+		{"id":"1f137e21d3367452","x":-636,"y":-90,"width":250,"height":60,"type":"text","text":"必要性：\n$Ax=\\beta$ 有解"},
+		{"id":"69fc3cbedf176640","x":590,"y":100,"width":360,"height":85,"type":"text","text":"$\\beta$ 属于齐次线性方程组 $A'y=0$ 解空间的正交补空间$\\Longrightarrow$ $Ax=\\beta$ 有解"},
+		{"id":"5e110a7e1978a1c4","type":"text","text":"$Ax=\\beta$ 有解 $\\Longrightarrow$ $\\beta$ 属于齐次线性方程组 $A'y=0$ 解空间的正交补空间","x":-200,"y":-115,"width":580,"height":50},
+		{"id":"c5cdb839e9ce9519","x":170,"y":90,"width":260,"height":95,"type":"text","text":"子结论\n$Ax=\\beta$ 有解 $\\Longleftrightarrow$ $\\beta\\in U$ "},
+		{"id":"eb4177b3144b2729","x":-760,"y":138,"width":455,"height":290,"type":"text","text":"前提条件（找出等价描述）：\n1. $A=(\\alpha_{1},\\alpha_{2},\\cdots,\\alpha_{n})$\n2. $A'y=0$ 的解空间描述为 $\\{{y\\in \\mathbb{R}^m\\mid (\\alpha_{i},y)=0,i=1,2,\\cdots,n}\\}$\n3. $U=L(\\alpha_{1},\\alpha_{2},\\cdots,\\alpha_{n})$\n4. 证明 $U^\\perp=\\{{y\\in \\mathbb{R}^m\\mid (\\alpha_{i},y)=0,i=1,2,\\cdots,n}\\}$"}
+	],
+	"edges":[
+		{"id":"c6b419bae4a8fef5","fromNode":"eb4177b3144b2729","fromSide":"right","toNode":"c5cdb839e9ce9519","toSide":"left","label":"用列分块表示，再用\n子空间定义"},
+		{"id":"decfa4011d98005f","fromNode":"eb4177b3144b2729","fromSide":"bottom","toNode":"f8f470da73e9e1c6","toSide":"top"},
+		{"id":"c075851924422b9d","fromNode":"2f9acf4dc704d1f4","fromSide":"top","toNode":"afba094f6526e332","toSide":"bottom"},
+		{"id":"c52a84a4c980e8f5","fromNode":"f8f470da73e9e1c6","fromSide":"bottom","toNode":"afba094f6526e332","toSide":"left"},
+		{"id":"b8b903866c30a905","fromNode":"c5cdb839e9ce9519","fromSide":"top","toNode":"5e110a7e1978a1c4","toSide":"bottom"},
+		{"id":"c27e7dbc631d5146","fromNode":"eb4177b3144b2729","fromSide":"left","toNode":"2f9acf4dc704d1f4","toSide":"left","label":"翻译解空间"},
+		{"id":"2788ec7d2a0f787d","fromNode":"1f137e21d3367452","fromSide":"right","toNode":"c5cdb839e9ce9519","toSide":"left"},
+		{"id":"226cab84787a223c","fromNode":"f8f470da73e9e1c6","fromSide":"right","toNode":"5e110a7e1978a1c4","toSide":"bottom"},
+		{"id":"55fdac932761ae63","fromNode":"afba094f6526e332","fromSide":"top","toNode":"69fc3cbedf176640","toSide":"bottom"},
+		{"id":"68bdcaad9939e098","fromNode":"c5cdb839e9ce9519","fromSide":"right","toNode":"69fc3cbedf176640","toSide":"bottom"}
+	]
+}

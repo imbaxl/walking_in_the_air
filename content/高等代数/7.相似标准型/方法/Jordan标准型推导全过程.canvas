@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"a026c7245f611a68","type":"text","text":"找简单的相似矩阵","x":430,"y":60,"width":310,"height":60},
+		{"id":"0a7e48ae67041f16","type":"text","text":"可对角化","x":820,"y":60,"width":250,"height":60},
+		{"id":"360e8f722c6a47d4","type":"file","file":"高等代数/6.特征值与特征向量/理论/2.对角化/对角化.md","x":1180,"y":-200,"width":400,"height":580},
+		{"id":"33edfd30f0449c9c","type":"text","text":"不可对角化","x":460,"y":420,"width":250,"height":60},
+		{"id":"8e7f07333ed1b13d","type":"file","file":"高等代数/7.相似标准型/理论/1.多项式矩阵/多项式矩阵.md","x":-740,"y":511,"width":380,"height":350},
+		{"id":"60a79b5e376d2b44","type":"file","file":"高等代数/7.相似标准型/理论/2.矩阵的法式/矩阵的法式.md","x":-740,"y":940,"width":440,"height":280},
+		{"id":"7c6969c95ae327ea","type":"text","text":"数字矩阵相似 $\\Longleftrightarrow$ $\\lambda-$矩阵相抵","x":439,"y":661,"width":293,"height":50},
+		{"id":"16739e11e321572a","type":"text","text":"$\\lambda-$矩阵可通过相抵变换化为 $1,\\cdots,1,d_{1},\\cdots,d_{m}$","x":378,"y":1050,"width":415,"height":60},
+		{"id":"26353a440925eae8","type":"file","file":"高等代数/4.线性映射/理论/3.线性映射与矩阵/矩阵相似.md","x":-100,"y":-110,"width":400,"height":400},
+		{"id":"c7bf63142ddc7e61","type":"file","file":"高等代数/7.相似标准型/理论/3.不变因子/不变因子.md","x":-720,"y":1300,"width":400,"height":600},
+		{"id":"8f996ddae0a8111c","type":"text","text":"定义行列式因子和不变因子，帮助圈定了相似关系下的全系不变量","x":365,"y":1557,"width":442,"height":87},
+		{"id":"cc8e96395fff91bb","type":"text","text":"分析不变因子，发现如果经过一些排列，就能对应友阵转置的不变因子，然后还原成 Frobenius块，","x":467,"y":1880,"width":239,"height":170}
+	],
+	"edges":[
+		{"id":"ff6a780bc02e0cec","fromNode":"26353a440925eae8","fromSide":"right","toNode":"a026c7245f611a68","toSide":"left"},
+		{"id":"b41f3c8046a136f3","fromNode":"a026c7245f611a68","fromSide":"right","toNode":"0a7e48ae67041f16","toSide":"left"},
+		{"id":"c3b3d76546798641","fromNode":"0a7e48ae67041f16","fromSide":"right","toNode":"360e8f722c6a47d4","toSide":"left"},
+		{"id":"7d9a7a5f09266d25","fromNode":"a026c7245f611a68","fromSide":"bottom","toNode":"33edfd30f0449c9c","toSide":"top"},
+		{"id":"2824ba1bf5f9c924","fromNode":"8e7f07333ed1b13d","fromSide":"right","toNode":"7c6969c95ae327ea","toSide":"left","label":"定理8"},
+		{"id":"533de189e5c3e9ba","fromNode":"7c6969c95ae327ea","fromSide":"bottom","toNode":"16739e11e321572a","toSide":"top"},
+		{"id":"287ab6a3b695a753","fromNode":"60a79b5e376d2b44","fromSide":"right","toNode":"16739e11e321572a","toSide":"left","label":"推论4"},
+		{"id":"61014c37c7893c15","fromNode":"33edfd30f0449c9c","fromSide":"bottom","toNode":"7c6969c95ae327ea","toSide":"top"},
+		{"id":"58f6b0bb3469730e","fromNode":"16739e11e321572a","fromSide":"bottom","toNode":"8f996ddae0a8111c","toSide":"top"},
+		{"id":"7ca24cb22cfc1bca","fromNode":"c7bf63142ddc7e61","fromSide":"right","toNode":"8f996ddae0a8111c","toSide":"left"},
+		{"id":"ef320fad6cd4317e","fromNode":"60a79b5e376d2b44","fromSide":"right","toNode":"cc8e96395fff91bb","toSide":"left","label":"推论4"},
+		{"id":"f3c09891768c7483","fromNode":"8f996ddae0a8111c","fromSide":"bottom","toNode":"cc8e96395fff91bb","toSide":"top","label":"利用全系不变量"}
+	]
+}

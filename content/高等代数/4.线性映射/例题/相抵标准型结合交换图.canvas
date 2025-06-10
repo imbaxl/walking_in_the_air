@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"8a2d6a7c0ad1791a","x":100,"y":-30,"width":100,"height":50,"type":"text","text":"$U,g_{j}$"},
+		{"id":"e3fa80df6dc92a6f","x":100,"y":180,"width":100,"height":50,"type":"text","text":"$K_{m}$"},
+		{"id":"953d9cac2b13765f","x":-197,"y":-30,"width":97,"height":50,"type":"text","text":"$V,e_{i}$"},
+		{"id":"c4339be844015ab2","x":-192,"y":180,"width":92,"height":50,"type":"text","text":"$K_{n}$"},
+		{"id":"e6db9f0e62a77a48","type":"text","text":"$U,h_{j}$","x":237,"y":-120,"width":103,"height":60},
+		{"id":"7d6b517777a0efc1","type":"text","text":"$K_{m}$","x":237,"y":90,"width":103,"height":50},
+		{"id":"091f9ee0b55a9128","type":"text","text":"$V,f_{i}$","x":-60,"y":-120,"width":100,"height":60},
+		{"id":"b57fedfc06716133","type":"text","text":"$K_{n}$","x":-55,"y":90,"width":95,"height":50},
+		{"id":"0fae273630ceb078","x":-148,"y":280,"width":474,"height":400,"type":"text","text":"解读：\n若给定表示矩阵 $A$ ，想知道在同一个线性变换下，两边都换了基，是怎么实现的\n1. 先有 $Ax'$，为了换成另一个表示矩阵，就需要换掉两组基，实际上只要看坐标向量的起点和终点相同即可（如果忘记了坐标向量是怎么被作用的，可以回顾 [[过渡矩阵#4. 坐标向量的说明|坐标向量的说明]]），即 $$A=P^{-1}BQ$$\n2. 相抵标准型的实质是 $P,Q$ 的存在性，过渡矩阵和表示矩阵的结合只是提供了骨架，[[白皮书第四章#4.3. （例4.22）设 $ varphi$ 是有限维线性空间 $V$ 到 $U$ 的线性映射，求证：必存在 $V$ 和 $U$ 的两组基，使线性映射 $ varphi$ 在两组基下的表示矩阵为 $ begin{pmatrix} I_r & O O & O end{pmatrix}$.|例4.22]] 说明的是，已经有了这样的矩阵 $P,Q$，将他们指定为给定新基下的过渡矩阵，那么得出来的矩阵 $B$ 就恰好是表示矩阵."}
+	],
+	"edges":[
+		{"id":"7a6ba539c6f651f9","fromNode":"953d9cac2b13765f","fromSide":"right","toNode":"8a2d6a7c0ad1791a","toSide":"left","label":"A"},
+		{"id":"71412a4246f34280","fromNode":"c4339be844015ab2","fromSide":"right","toNode":"e3fa80df6dc92a6f","toSide":"left"},
+		{"id":"908aca0ac37639c2","fromNode":"8a2d6a7c0ad1791a","fromSide":"bottom","toNode":"e3fa80df6dc92a6f","toSide":"top"},
+		{"id":"96e1f72fb54352d9","fromNode":"953d9cac2b13765f","fromSide":"bottom","toNode":"c4339be844015ab2","toSide":"top"},
+		{"id":"c9eb6d167ea2648b","fromNode":"b57fedfc06716133","fromSide":"right","toNode":"7d6b517777a0efc1","toSide":"left"},
+		{"id":"737d2446fa38fb49","fromNode":"091f9ee0b55a9128","fromSide":"bottom","toNode":"b57fedfc06716133","toSide":"top"},
+		{"id":"341ebf15fc394f1f","fromNode":"091f9ee0b55a9128","fromSide":"right","toNode":"e6db9f0e62a77a48","toSide":"left","label":"B"},
+		{"id":"92489070e8f9bbe8","fromNode":"e6db9f0e62a77a48","fromSide":"bottom","toNode":"7d6b517777a0efc1","toSide":"top"},
+		{"id":"9155f7d545289480","fromNode":"953d9cac2b13765f","fromSide":"top","toNode":"091f9ee0b55a9128","toSide":"top","label":"P"},
+		{"id":"382d3a3e3272e5f7","fromNode":"8a2d6a7c0ad1791a","fromSide":"top","toNode":"e6db9f0e62a77a48","toSide":"top","label":"Q"}
+	]
+}

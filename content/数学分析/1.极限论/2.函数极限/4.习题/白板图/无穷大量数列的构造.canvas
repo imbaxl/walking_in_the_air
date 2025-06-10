@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"89fdfdd784205771","x":-261,"y":220,"width":520,"height":240,"type":"text","text":"[[无穷大量的定义]]\n>[!dfn] 定义： 无穷大量\n>$$\\lim\\limits_{n\\to \\infty}x_{n}=\\infty \\Longleftrightarrow$$\n>$$ \\forall G>0,\\exists N>0, s.t.\\forall n>N,|x_n|>G $$"},
+		{"id":"17efda916fa4bf2e","x":-251,"y":120,"width":250,"height":60,"type":"text","text":"找到 $N$"},
+		{"id":"722b69a9276c4b02","x":18,"y":28,"width":382,"height":52,"type":"text","text":"构造子列 $\\{{x_{n_{k}}}\\}$，满足 $x_{n_{k}}>k$"},
+		{"id":"371333f12a795965","x":-600,"y":-80,"width":474,"height":160,"type":"text","text":"给定无上界数列 $\\{{x_{n}}\\}$\n$$\\forall M>0,\\exists x_{0}:x_{0}>M $$"},
+		{"id":"d4a6e6cb35ade598","x":-154,"y":-280,"width":306,"height":90,"type":"text","text":"类似从 $n$ 维降到 $2$ 阶再做推理，推理完成后再通过数学归纳法推广回 $n$ 维"}
+	],
+	"edges":[
+		{"id":"599c6ffc650bae0c","fromNode":"17efda916fa4bf2e","fromSide":"bottom","toNode":"89fdfdd784205771","toSide":"top"}
+	]
+}

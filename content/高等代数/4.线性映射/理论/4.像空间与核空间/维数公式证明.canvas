@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"9f652a261c5a7d8c","x":-176,"y":-127,"width":536,"height":227,"type":"text","text":">[!thm] 定理6\n>设 $V,U$ 分别是数域 $\\mathbb{K}$ 上 $n$ 维和 $m$ 维线性空间，又设 $\\{{e_{1},e_{2},\\cdots,e_{n}}\\}$ 是 $V$ 的基，$\\{{f_{1},f_{2},\\cdots,f_{m}}\\}$ 是 $U$ 的基. 设 $\\varphi$ 是 $V\\to U$ 的线性映射，它在给定基下的表示矩阵为 $A$ ，则 $$\\text{dim}\\, \\mathrm{Im}\\, \\varphi = \\text{r}(A) , \\,\\text{dim}\\, \\mathrm{Ker}\\,\\varphi=n-\\text{r}(A).$$"},
+		{"id":"ff328cf060a0db46","x":-720,"y":-120,"width":460,"height":260,"type":"text","text":">[!lem] 引理5\n>设 $\\varphi:V\\to U$ 为线性映射，$V'\\subseteq V,\\, U'\\subseteq U$ 为子空间且满足 $\\varphi(V')\\subseteq U'$，则通过定义域的限制可得线性映射 $\\varphi':V'\\to U'$，使得 $\\varphi'$ 与 $\\varphi$ 具有相同的映射法则. 进一步，若 $\\varphi$ 是单映射，则 $\\varphi'$ 也是单映射."},
+		{"id":"2657721ebda2b0c0","x":-653,"y":260,"width":313,"height":300,"type":"text","text":"设 $\\varphi$ 为单射，则 $\\mathrm{Ker}\\, \\varphi =0$\n$$\\begin{align} \\mathrm{Ker}\\,\\varphi'&=\\{{v'\\in V'}\\mid \\varphi'(v')=0\\}\\\\&= \\{{v'\\in V'\\mid \\varphi(v')=0} \\} \\\\ &\\overset{?}=\\mathrm{Ker}\\, \\varphi \\cap V'=\\vec{0} \\end{align}$$\n❓说明一个元素的像为零就属于 $\\mathrm{Ker}\\, \\varphi$，并且元素就是属于 $V'$，这说明了如果 $\\mathrm{Ker}\\, \\varphi=0$，那么对于缩小定义域的 $\\varphi'$ 而言， $\\mathrm{Ker}\\, \\varphi'$ 也是零子空间."},
+		{"id":"0d86a1d7e02b28dd","x":-155,"y":200,"width":494,"height":52,"type":"text","text":"Rough idea：$\\mathrm{Ker}\\, \\varphi \\cong \\mathrm{Ker}\\,\\varphi_{A}\\quad \\mathrm{Im}\\, \\varphi \\cong \\mathrm{Im}\\, \\varphi_{A}$"},
+		{"id":"25570bc43c1852b9","x":-135,"y":360,"width":455,"height":122,"type":"text","text":"Step 1: $\\eta_{V}(\\mathrm{Ker}\\,\\varphi)\\subseteq \\mathrm{Ker}\\, \\varphi_{A}\\quad \\eta_{U}(\\mathrm{Im}\\, \\varphi)\\subseteq \\mathrm{Im}\\,\\varphi_{A}$\n从而满足 引理5，就能取到 $\\eta_{V}'$ 和 $\\eta_{U}'$"},
+		{"id":"247e88240a0224df","x":102,"y":920,"width":250,"height":60,"type":"text","text":"求 $\\mathrm{Ker}\\, \\varphi_{A}$ 的维度"},
+		{"id":"7ed63b9775441fc7","x":-242,"y":922,"width":250,"height":60,"type":"text","text":"求 $\\mathrm{Im}\\, \\varphi_{A}$ 的维度"},
+		{"id":"f76304c3714297ea","x":-241,"y":1044,"width":250,"height":236,"type":"text","text":"用表示矩阵的列分块张成子空间，再利用定理3.9.1，就能获得 $$\\text{dim}\\, \\mathrm{Im}\\,\\varphi_{A}$$\n这与表示矩阵的秩相等，再用线性同构 $\\eta_{V}'$ 把维数传回 $\\text{dim}\\, \\mathrm{Im}\\, \\varphi$"},
+		{"id":"aa038159f81ca944","x":102,"y":1060,"width":314,"height":220,"type":"text","text":"用解空间定义，$$\\mathrm{Ker}\\,\\varphi_{A}=\\{{x\\in \\mathbb{K}_{n}\\mid \\varphi_{A}(x)=Ax=0}\\} $$，利用 [[线性方程组的解]] 定理3 得到 $$\\text{dim}\\, \\mathrm{Ker}\\,\\varphi_{A}=n-r(A) $$\n再用线性同构 $\\eta_{U}'$ 把维数传回 $\\text{dim}\\, \\mathrm{Ker}\\,\\varphi$"},
+		{"id":"bc55ff82332d7df0","x":-47,"y":1380,"width":252,"height":120,"type":"text","text":"[[坐标向量(线性同构)]] 定理4 保证了线性同构就是维数相同."},
+		{"id":"97caef5843263123","x":-55,"y":560,"width":260,"height":160,"type":"text","text":"$$\\begin{CD}\nV@>\\varphi>> U \\\\\n@V \\eta_{1} VV @VV \\eta_{2} V \\\\\n\\mathbb{K}_{n} @>>\\varphi_{A}> \\mathbb{K}_{m}\n\\end{CD} $$"},
+		{"id":"d3adb6a187bd5210","x":-102,"y":780,"width":353,"height":65,"type":"text","text":"证明  $\\eta_{V}'$ 和 $\\eta_{U}'$ 满射，从而线性同构"}
+	],
+	"edges":[
+		{"id":"c2a1910b5142da5f","fromNode":"ff328cf060a0db46","fromSide":"bottom","toNode":"2657721ebda2b0c0","toSide":"top"},
+		{"id":"3a6e1c1825c37839","fromNode":"0d86a1d7e02b28dd","fromSide":"bottom","toNode":"25570bc43c1852b9","toSide":"top"},
+		{"id":"081f7928be144727","fromNode":"ff328cf060a0db46","fromSide":"right","toNode":"25570bc43c1852b9","toSide":"left"},
+		{"id":"28d64340059a8956","fromNode":"d3adb6a187bd5210","fromSide":"bottom","toNode":"7ed63b9775441fc7","toSide":"top"},
+		{"id":"deb69a3de0f2dde7","fromNode":"d3adb6a187bd5210","fromSide":"bottom","toNode":"247e88240a0224df","toSide":"top"},
+		{"id":"97e15690fa68ecd4","fromNode":"9f652a261c5a7d8c","fromSide":"bottom","toNode":"0d86a1d7e02b28dd","toSide":"top"},
+		{"id":"e9e9d86c03b0cadc","fromNode":"7ed63b9775441fc7","fromSide":"bottom","toNode":"f76304c3714297ea","toSide":"top"},
+		{"id":"bd47069d19ef9443","fromNode":"247e88240a0224df","fromSide":"bottom","toNode":"aa038159f81ca944","toSide":"top"},
+		{"id":"cb6559b645fcc96c","fromNode":"bc55ff82332d7df0","fromSide":"right","toNode":"aa038159f81ca944","toSide":"bottom"},
+		{"id":"c2d885c714c20897","fromNode":"bc55ff82332d7df0","fromSide":"left","toNode":"f76304c3714297ea","toSide":"bottom"},
+		{"id":"22f94a218a98a067","fromNode":"25570bc43c1852b9","fromSide":"bottom","toNode":"97caef5843263123","toSide":"top"},
+		{"id":"22989292d11d88a6","fromNode":"97caef5843263123","fromSide":"bottom","toNode":"d3adb6a187bd5210","toSide":"top"}
+	]
+}

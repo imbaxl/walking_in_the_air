@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"81a23834aaf83d43","x":-311,"y":-118,"width":251,"height":121,"type":"text","text":"为证明：[[线性映射与矩阵]] 的定理 7，我们根据条件逐一解读"},
+		{"id":"8293c84311ffd37b","x":120,"y":-194,"width":480,"height":274,"type":"text","text":">[!thm] 定理7\n>设 $V$ 是数域 $\\mathbb{K}$ 上的线性空间，$\\varphi\\in \\mathcal{L}(V)$，又设  $\\{{e_{1},e_{2},\\cdots,e_{n}}\\}$ 及 $\\{{f_{1},f_{2},\\cdots,f_{n}}\\}$ 是 $V$ 的两组基且从 $\\{{e_{1},e_{2},\\cdots,e_{n}}\\}$ 到 $\\{{f_{1},f_{2},\\cdots,f_{n}}\\}$ 的过渡矩阵为 $P$. 若 $\\varphi$ 在基 $\\{{e_{1},e_{2},\\cdots,e_{n}}\\}$ 下的表示矩阵为 $A$ ，在基 $\\{{f_{1},f_{2},\\cdots,f_{n}}\\}$ 下的表示矩阵为 $B$，则 $$B=P^{-1}AP. $$"},
+		{"id":"0aecb3feb7d09989","x":760,"y":-57,"width":250,"height":60,"type":"text","text":"$\\varphi$ 是 $V$ 上的一个线性变换"},
+		{"id":"412e1e2f1eadd524","x":1139,"y":147,"width":501,"height":113,"type":"text","text":"指定 $\\alpha$ 的坐标向量\n$$\\begin{align} \\alpha&=\\lambda_{1}e_{1}+\\lambda_{2} e_{2}+\\cdots+\\lambda_{n}e_{n}=\\mu_{1}f_{1}+\\mu_{2}f_{2}+\\cdots+\\mu_{n}f_{n}\\\\ \\varphi(\\alpha) &=\\xi_{1}e_{1}+\\xi_{2}e_{2}+\\cdots+\\xi_{n}e_{n}=\\eta_{1}f_{1}+\\eta_{2}f_{2}+\\cdots+\\eta_{n}f_{n}\\end{align}$$"},
+		{"id":"0cad563550e117eb","x":820,"y":179,"width":257,"height":50,"type":"text","text":"联系到表示矩阵"},
+		{"id":"a98410f1235b0914","type":"text","text":"表示矩阵 $B$ ：$\\varphi$ 在 $\\{{f_{1},f_{2},\\cdots,f_{n}}\\}$  下的表示矩阵","x":649,"y":331,"width":300,"height":85},
+		{"id":"81cecd26ace2afbe","x":1000,"y":480,"width":443,"height":50,"type":"text","text":"过渡矩阵 $P$ ： $\\{{e_{1},e_{2},\\cdots,e_{n}}\\}$ 到 $\\{{f_{1},f_{2},\\cdots,f_{n}}\\}$ "},
+		{"id":"d15aa5a0c784f476","x":1265,"y":344,"width":250,"height":60,"type":"text","text":"联系到过渡矩阵"},
+		{"id":"adfdc5bb79bed0dd","x":349,"y":161,"width":300,"height":85,"type":"text","text":"表示矩阵 $A$ ：$\\varphi$ 在 $\\{{e_{1},e_{2},\\cdots,e_{n}}\\}$  下的表示矩阵"},
+		{"id":"5689498e6eff8fb9","x":1200,"y":-141,"width":380,"height":229,"type":"text","text":"**任取 $\\alpha\\in V$**\n$\\alpha$ 通过坐标向量来表达的形式是唯一的，而线性变换 $\\varphi$ 可能会映射到另外一个向量，但是无一例外坐标向量总是受基向量的选取而决定。这和数字不太一样，数字只需要显露自身，就是唯一的，但是向量的唯一性需要固定了基向量之后才会显露。可复习：[[坐标向量(线性同构)]]"},
+		{"id":"0cdbf1f5a6064b37","x":-185,"y":184,"width":405,"height":147,"type":"text","text":"$$\\begin{pmatrix} \\xi_{1}\\\\ \\xi_{2} \\\\ \\vdots \\\\ \\xi_{n} \\end{pmatrix}=A\\begin{pmatrix} \\lambda_{1}\\\\\\lambda_{2} \\\\ \\vdots \\\\ \\lambda_{n} \\end{pmatrix} $$"},
+		{"id":"72defee5c4cf155f","type":"text","text":"$$\\begin{pmatrix} \\eta_{1}\\\\ \\eta_{2} \\\\ \\vdots \\\\ \\eta_{n} \\end{pmatrix}=B\\begin{pmatrix} \\mu_{1} \\\\ \\mu_{2} \\\\ \\vdots \\\\ \\mu_{n} \\end{pmatrix} $$","x":18,"y":416,"width":405,"height":147},
+		{"id":"93fe88a152ada217","type":"text","text":"$$\\begin{pmatrix} \\lambda_{1} \\\\ \\lambda_{2} \\\\ \\vdots \\\\ \\lambda_{n} \\end{pmatrix}=P\\begin{pmatrix} \\mu_{1} \\\\ \\mu_{2} \\\\ \\vdots \\\\ \\mu_{n} \\end{pmatrix} $$","x":499,"y":620,"width":405,"height":147},
+		{"id":"f3f1ef3333d7f8ec","type":"text","text":"$$\\begin{pmatrix} \\xi_{1}\\\\ \\xi_{2} \\\\ \\vdots \\\\ \\xi_{n} \\end{pmatrix}=AP\\begin{pmatrix} \\mu_{1} \\\\ \\mu_{2} \\\\ \\vdots \\\\ \\mu_{n} \\end{pmatrix} $$","x":-590,"y":416,"width":405,"height":147},
+		{"id":"53cfd9fed36b4980","type":"text","text":"$$\\begin{pmatrix} \\xi_{1} \\\\ \\xi_{2} \\\\ \\vdots \\\\ \\xi_{n} \\end{pmatrix}=P\\begin{pmatrix}  \\eta_{1} \\\\ \\eta_{2} \\\\ \\vdots \\\\ \\eta_{n} \\end{pmatrix} $$","x":499,"y":840,"width":405,"height":160},
+		{"id":"ab837ba3cf821c85","type":"text","text":"$$\\begin{pmatrix} \\xi_{1} \\\\ \\xi_{2} \\\\ \\vdots \\\\ \\xi_{n} \\end{pmatrix}=PB\\begin{pmatrix} \\mu_{1} \\\\ \\mu_{2} \\\\ \\vdots \\\\ \\mu_{n} \\end{pmatrix}$$","x":-340,"y":840,"width":405,"height":160},
+		{"id":"eb7aaad78e48ec13","type":"text","text":"$$PB\\begin{pmatrix} \\mu_{1} \\\\ \\mu_{2} \\\\ \\vdots \\\\ \\mu_{n} \\end{pmatrix}=AP\\begin{pmatrix} \\mu_{1} \\\\ \\mu_{2} \\\\ \\vdots \\\\ \\mu_{n} \\end{pmatrix} $$","x":-995,"y":693,"width":405,"height":147},
+		{"id":"f556c7f4f5a96cea","x":-919,"y":968,"width":250,"height":92,"type":"text","text":"$\\alpha$ 是任意的，因此：$$PB=AP$$"}
+	],
+	"edges":[
+		{"id":"2d7afb3727af5af0","fromNode":"81a23834aaf83d43","fromSide":"right","toNode":"8293c84311ffd37b","toSide":"left"},
+		{"id":"3b7deba94d5dccbc","fromNode":"8293c84311ffd37b","fromSide":"right","toNode":"0aecb3feb7d09989","toSide":"left"},
+		{"id":"5f4347a4f88ae425","fromNode":"0aecb3feb7d09989","fromSide":"right","toNode":"5689498e6eff8fb9","toSide":"left"},
+		{"id":"8703a497679bd2ee","fromNode":"5689498e6eff8fb9","fromSide":"bottom","toNode":"412e1e2f1eadd524","toSide":"top"},
+		{"id":"1e95c786f9914022","fromNode":"412e1e2f1eadd524","fromSide":"bottom","toNode":"d15aa5a0c784f476","toSide":"top"},
+		{"id":"c136950bc63f924b","fromNode":"412e1e2f1eadd524","fromSide":"left","toNode":"0cad563550e117eb","toSide":"right"},
+		{"id":"4093704bfbe592ea","fromNode":"d15aa5a0c784f476","fromSide":"bottom","toNode":"81cecd26ace2afbe","toSide":"top"},
+		{"id":"99fae6d73af88f8e","fromNode":"0cad563550e117eb","fromSide":"bottom","toNode":"a98410f1235b0914","toSide":"top"},
+		{"id":"ff334827a55e4879","fromNode":"0cad563550e117eb","fromSide":"left","toNode":"adfdc5bb79bed0dd","toSide":"right"},
+		{"id":"5055a5876f043acb","fromNode":"adfdc5bb79bed0dd","fromSide":"left","toNode":"0cdbf1f5a6064b37","toSide":"right"},
+		{"id":"9413cdcdc836f0c5","fromNode":"a98410f1235b0914","fromSide":"left","toNode":"72defee5c4cf155f","toSide":"right"},
+		{"id":"e3c9b38e8bf24833","fromNode":"81cecd26ace2afbe","fromSide":"left","toNode":"93fe88a152ada217","toSide":"right"},
+		{"id":"ced522d7445886b0","fromNode":"0cdbf1f5a6064b37","fromSide":"left","toNode":"f3f1ef3333d7f8ec","toSide":"top"},
+		{"id":"4be282c14b624f4d","fromNode":"93fe88a152ada217","fromSide":"left","toNode":"f3f1ef3333d7f8ec","toSide":"bottom"},
+		{"id":"719d91adc19c80cd","fromNode":"72defee5c4cf155f","fromSide":"left","toNode":"ab837ba3cf821c85","toSide":"top"},
+		{"id":"0dce12b7b9b3a554","fromNode":"53cfd9fed36b4980","fromSide":"left","toNode":"ab837ba3cf821c85","toSide":"right"},
+		{"id":"a53265dbd1fa2ca6","fromNode":"f3f1ef3333d7f8ec","fromSide":"left","toNode":"eb7aaad78e48ec13","toSide":"top"},
+		{"id":"0d4dbaa872e1c870","fromNode":"ab837ba3cf821c85","fromSide":"left","toNode":"eb7aaad78e48ec13","toSide":"right"},
+		{"id":"305931e05eaed3e9","fromNode":"eb7aaad78e48ec13","fromSide":"bottom","toNode":"f556c7f4f5a96cea","toSide":"top"}
+	]
+}

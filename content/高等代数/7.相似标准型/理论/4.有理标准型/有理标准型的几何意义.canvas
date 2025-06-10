@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"925e0ece53d7bea9","x":-180,"y":-80,"width":250,"height":60,"type":"text","text":"循环子空间直和分解"},
+		{"id":"250ae4d274d4fca8","x":48,"y":181,"width":312,"height":99,"type":"text","text":"是一种相似标准型\n描述表示矩阵的等价类代表元"},
+		{"id":"c5749289b2dad60e","x":-340,"y":181,"width":250,"height":60,"type":"text","text":"有理标准型"},
+		{"id":"84d64aa113e85e7d","x":-337,"y":63,"width":437,"height":50,"type":"text","text":"一个 Frobenius块 对应 一个循环子空间"}
+	],
+	"edges":[
+		{"id":"b49fa6c53b0ace7f","fromNode":"c5749289b2dad60e","fromSide":"right","toNode":"250ae4d274d4fca8","toSide":"left"},
+		{"id":"a257aec799b0643c","fromNode":"c5749289b2dad60e","fromSide":"top","toNode":"84d64aa113e85e7d","toSide":"bottom"},
+		{"id":"89322907fa3ad9ba","fromNode":"925e0ece53d7bea9","fromSide":"bottom","toNode":"84d64aa113e85e7d","toSide":"top"}
+	]
+}
