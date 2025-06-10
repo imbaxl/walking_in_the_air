@@ -56,7 +56,7 @@ export type FolderState = {
 }
 
 export default ((userOpts?: Partial<Options>) => {
-  const opts: Options = { ...defaultOptions, ...userOpts，folderClickBehavior: "none" as any // 需要类型转换 }
+  const opts: Options = { ...defaultOptions, ...userOpts, folderClickBehavior: "none" as any }
   const { OverflowList, overflowListAfterDOMLoaded } = OverflowListFactory()
 
   const Explorer: QuartzComponent = ({ cfg, displayClass }: QuartzComponentProps) => {
