@@ -56,3 +56,10 @@ $desktopGrid: (
       "grid-sidebar-left grid-center grid-sidebar-right"\
       "grid-sidebar-left grid-footer grid-sidebar-right"',
 );
+
+:root {
+  --global-font-size: 18px;      // 全局基础字体大小
+  --title-font-size: 3rem;       // 文章标题大小
+  --header-font-size: 2.25rem;      // 标题组大小 (H1/H2等)
+  --code-font-size: 1.2rem;    // 代码块字体大小
+}
