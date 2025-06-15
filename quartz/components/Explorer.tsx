@@ -56,7 +56,7 @@ export type FolderState = {
 }
 
 export default ((userOpts?: Partial<Options>) => {
-  const opts: Options = { ...defaultOptions, ...userOpts, folderClickBehavior: "none" as any }
+  const opts: Options = { ...defaultOptions, ...userOpts }
   const { OverflowList, overflowListAfterDOMLoaded } = OverflowListFactory()
 
   const Explorer: QuartzComponent = ({ cfg, displayClass }: QuartzComponentProps) => {
@@ -94,28 +94,7 @@ export default ((userOpts?: Partial<Options>) => {
             <line x1="4" x2="20" y1="18" y2="18" />
           </svg>
         </button>
-        <button
-          type="button"
-          class="title-button explorer-toggle desktop-explorer"
-          data-mobile={false}
-          aria-expanded={true}
-        >
-          <h2>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h2>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="14"
-            height="14"
-            viewBox="5 8 14 8"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="fold"
-          >
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button>
+
         <div class="explorer-content" aria-expanded={false}>
           <OverflowList class="explorer-ul" />
         </div>
@@ -124,7 +103,7 @@ export default ((userOpts?: Partial<Options>) => {
             <a href="#"></a>
           </li>
         </template>
-        <template id="template-folder">
+                <template id="template-folder">
   <li>
     <div class="folder-container">
       <svg
@@ -142,7 +121,8 @@ export default ((userOpts?: Partial<Options>) => {
         <polyline points="6 9 12 15 18 9"></polyline>
       </svg>
       <div>
-        {/* 保留按钮结构但移除链接功能 */}
+        
+{/* 保留按钮结构但移除链接功能 */}
         <button class="folder-button" style="background: none; border: none; padding: 0; cursor: default;">
           <span class="folder-title"></span>
         </button>

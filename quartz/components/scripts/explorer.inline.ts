@@ -111,19 +111,15 @@ function createFolderNode(
   const folderPath = node.slug
   folderContainer.dataset.folderpath = folderPath
 
-  if (opts.folderClickBehavior === "link") {
-    // Replace button with link for link behavior
-    const button = titleContainer.querySelector(".folder-button") as HTMLElement
-    const a = document.createElement("a")
-    a.href = resolveRelative(currentSlug, folderPath)
-    a.dataset.for = folderPath
-    a.className = "folder-title"
-    a.textContent = node.displayName
-    button.replaceWith(a)
-  } else {
-    const span = titleContainer.querySelector(".folder-title") as HTMLElement
-    span.textContent = node.displayName
-  }
+  // 修改开始：移除链接功能，始终使用按钮
+  const button = titleContainer.querySelector(".folder-button") as HTMLButtonElement
+  const span = button.querySelector(".folder-title") as HTMLSpanElement
+  span.textContent = node.displayName
+  
+  // 给文件夹名称按钮添加点击事件（与倒三角图标相同的功能）
+  button.addEventListener("click", toggleFolder)
+  window.addCleanup(() => button.removeEventListener("click", toggleFolder))
+  // 修改结束
 
   // if the saved state is collapsed or the default state is collapsed
   const isCollapsed =
@@ -238,15 +234,16 @@ async function setupExplorer(currentSlug: FullSlug) {
     }
 
     // Set up folder click handlers
-    if (opts.folderClickBehavior === "collapse") {
-      const folderButtons = explorer.getElementsByClassName(
-        "folder-button",
-      ) as HTMLCollectionOf<HTMLElement>
-      for (const button of folderButtons) {
-        button.addEventListener("click", toggleFolder)
-        window.addCleanup(() => button.removeEventListener("click", toggleFolder))
-      }
-    }
+  // 修改：移除原有的按钮事件绑定（现在在createFolderNode中处理）
+  // if (opts.folderClickBehavior === "collapse") {
+  //   const folderButtons = explorer.getElementsByClassName(
+  //     "folder-button",
+  //   ) as HTMLCollectionOf<HTMLElement>
+  //   for (const button of folderButtons) {
+  //     button.addEventListener("click", toggleFolder)
+  //     window.addCleanup(() => button.removeEventListener("click", toggleFolder))
+  //   }
+  // }
 
     const folderIcons = explorer.getElementsByClassName(
       "folder-icon",

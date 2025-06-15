@@ -3,43 +3,12 @@
 // put your custom CSS here!
 
 
-:root {
-  // 主色
-  --primary: #E9E4ED;
-  --primary-light: #E9E4ED;
-  --primary-dark: #382B49;
-  
-  // 辅助色
-  --secondary: #8338ec;
-  --accent: #8B5FBF;
-  
-  // 背景/文字
-  --body-background: #61398F;
-  --body-color: #1d3557;
-  
-  // 其他元素
-  --link-color: var(--accent);
-  --link-hover: #{darken(#ff006e, 15%)};
-  
-  // 卡片/边框
-  --card-background: #E9E4ED;
-  --border-color: #E9E4ED;
-  
-  // 代码块
-  --code-background: #D6C6E1;
-  
-  // 导航栏
-  --navbar-background: var(--primary);
-  --navbar-text: #4A4A4A;
-}
 
-[data-theme="dark"] {
-  --body-background: #382B49;
-  --body-color: #FFFFFF;
-  --card-background: #895896;
-  --code-background: #4D3B64a;
-}
+
 
 body {
   font-size: 15px; // 调整为你需要的字号
+  line-height: 2.0; // 默认值通常为 1.5，按需调整
 }
+
+

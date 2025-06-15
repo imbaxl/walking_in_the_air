@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "walking in the air",
+    pageTitle: "Walking In The Air",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -28,37 +28,35 @@ const config: QuartzConfig = {
         code: "IBM Plex Mono",
       },
       colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
-        },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
-        },
-      },
+    lightMode: {
+      light: "#F5F0FA",
+      lightgray: "#E2D5ED",
+      gray: "#B2A2C2",
+      darkgray: "#4A3A5A",
+      dark: "#5A3D80",
+      secondary: "#61398F",
+      tertiary: "#000000",
+      highlight: "#D6C6E1",
+      textHighlight: "#000000"
+    },
+    darkMode: {
+      light: "#1F1630",
+      lightgray: "#34294A",
+      gray: "#6A5F7F",
+      darkgray: "#E8DFF5",
+      dark: "#9A73C5",
+      secondary: "#e0e0e0",
+      tertiary: "#FF6600",
+      highlight: "#4d425f",
+      textHighlight: "#FF6600"
+    },
+  },
     },
   },
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
-      Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "git", "filesystem"],
-      }),
+
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
@@ -68,7 +66,7 @@ const config: QuartzConfig = {
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
-      Plugin.TableOfContents(),
+
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "mathjax",
