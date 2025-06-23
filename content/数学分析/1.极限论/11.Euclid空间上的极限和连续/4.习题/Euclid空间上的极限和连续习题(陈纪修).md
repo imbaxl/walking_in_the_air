@@ -1,7 +1,7 @@
 ---
 {}
 ---
-#flashcards/数学分析/陈纪修/第十一章Euclid空间上的极限和连续 
+#flashcards/数学分析/陈纪修/第11章Euclid空间上的极限和连续 
 
 # 1. Euclid空间上的基本定理
 
