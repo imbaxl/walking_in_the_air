@@ -76,14 +76,15 @@ const config: QuartzConfig = {
     },
     tex: {
       packages: {'[+]': ['ams']},
-      inlineMath: [              
-        ['$', '$'],
-        ['\\(', '\\)']
-      ],
       displayMath: [             
         ['$$', '$$'],
         ['\\[', '\\]']
       ],
+      inlineMath: [              
+        ['$', '$'],
+        ['\\(', '\\)']
+      ],
+
       processEscapes: true       
     },
     svg: {
