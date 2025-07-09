@@ -1,6 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import { inlineDoubleDollarDisplay } from "./plugins/remark/inlineDoubleDollarDisplay"
+import { inlineDoubleDollarDisplay } from "./quartz/plugins/remark/inlineDoubleDollarDisplay"
 
 /**
  * Quartz 4 Configuration
