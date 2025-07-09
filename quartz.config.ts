@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { inlineDoubleDollarDisplay } from "./plugins/remark/inlineDoubleDollarDisplay"
 
 /**
  * Quartz 4 Configuration
@@ -56,7 +57,7 @@ const config: QuartzConfig = {
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
-
+      Plugin.inlineDoubleDollarDisplay(),
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
@@ -113,3 +114,8 @@ const config: QuartzConfig = {
 }
 
 export default config
+
+export default defineConfig({
+  // …
+  plugins: quartzRemarkPlugins(/* … */),
+})
