@@ -57,7 +57,6 @@ const config: QuartzConfig = {
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
-      Plugin.inlineDoubleDollarDisplay(),
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
@@ -118,4 +117,9 @@ const config: QuartzConfig = {
 export default defineConfig({
   // …
   plugins: quartzRemarkPlugins(/* … */),
+  // …
+  remarkPlugins: [
+    inlineDoubleDollarDisplay,   // ← 加在最前或最末皆可
+    // 其余 Quartz 自带插件 …
+  ],
 })
