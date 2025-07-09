@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import MathJax from "../components/MathJax"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -66,3 +67,23 @@ export const defaultListPageLayout: PageLayout = {
   ],
   right: [],
 }
+
+
+
+export default function Layout() {
+  return (
+    <>
+      {/* 页面内容 */}
+      <MathJax />
+    </>
+  )
+}
+
+
+
+
+
+
+
+
+
