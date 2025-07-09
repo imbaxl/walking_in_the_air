@@ -76,15 +76,14 @@ const config: QuartzConfig = {
     },
     tex: {
       packages: {'[+]': ['ams']},
-      displayMath: [             
-        ['$$', '$$'],
-        ['\\[', '\\]']
-      ],
       inlineMath: [              
         ['$', '$'],
         ['\\(', '\\)']
       ],
-
+      displayMath: [             
+        ['$$', '$$'],
+        ['\\[', '\\]']
+      ],
       processEscapes: true       
     },
     svg: {
@@ -113,10 +112,4 @@ const config: QuartzConfig = {
   },
 }
 
-
-
-
-
-
-
-
+export default config
