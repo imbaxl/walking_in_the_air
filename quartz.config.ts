@@ -114,3 +114,24 @@ const config: QuartzConfig = {
 }
 
 export default config
+
+
+// quartz.config.ts
+
+export const config = defineConfig({
+  plugins: {
+    markdown: {
+      remarkPlugins: [],
+      rehypePlugins: [],
+      math: false, // 关闭内建的 math 支持
+    },
+  },
+})
+
+
+
+
+
+
+
+
