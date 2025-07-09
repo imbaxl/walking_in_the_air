@@ -1,6 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import { inlineDoubleDollarDisplay } from "./quartz/plugins/remark/inlineDoubleDollarDisplay"
+
 
 /**
  * Quartz 4 Configuration
@@ -112,14 +112,5 @@ const config: QuartzConfig = {
   },
 }
 
-//export default config
+export default config
 
-export default defineConfig({
-  // …
-  plugins: quartzRemarkPlugins(/* … */),
-  // …
-  remarkPlugins: [
-    inlineDoubleDollarDisplay,   // ← 加在最前或最末皆可
-    // 其余 Quartz 自带插件 …
-  ],
-})
