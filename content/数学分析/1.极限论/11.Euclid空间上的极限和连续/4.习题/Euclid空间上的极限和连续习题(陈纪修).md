@@ -11,11 +11,15 @@
 根据 [[范数]] 的定义展开即可得证.
 
 
-## 1.2. 证明：若 $\mathbb{R}^n$ 中的点列 $\{{\vec{x}_{k}}\}$ 收敛，则其极限是唯一的
+
+## 1.2. 证明：若 $\mathbb{R}^n$ 中的点列 $\{{\boldsymbol{x}_{k}}\}$ 收敛，则其极限是唯一的
+?
+<font color="#9c81ca">分析</font>
+1. 假设有两个极限 $\lim\limits_{n\to \infty}\boldsymbol{x}_{n}$，
 
 
 
-## 1.3. 设 $\mathbb{R}^n$ 中的点列 $\{{\vec{x}_{k}}\}$ 和 $\{{\vec{y}_{k}}\}$ 收敛，证明：对于任何实数 $\alpha,\beta$，成立等式 $$\lim\limits_{k\to \infty}(\alpha\vec{x}_{k}+\beta \vec{y}_{k})=\alpha \lim\limits_{k\to \infty}\vec{x}_{k}+\beta \lim\limits_{k\to \infty}\vec{y}_{k} $$
+## 1.3. 设 $\mathbb{R}^n$ 中的点列 $\{{\boldsymbol{x}_{k}}\}$ 和 $\{{\boldsymbol{y}_{k}}\}$ 收敛，证明：对于任何实数 $\alpha,\beta$，成立等式 $$\lim\limits_{k\to \infty}(\alpha\boldsymbol{x}_{k}+\beta \boldsymbol{y}_{k})=\alpha \lim\limits_{k\to \infty}\boldsymbol{x}_{k}+\beta \lim\limits_{k\to \infty}\boldsymbol{y}_{k} $$
 
 
 
@@ -32,15 +36,15 @@
 （3）$S=\{{(x,y)\mid(x^2+y^2)(y^2-x^2-1)\leqslant 0 \}}$
 
 
-## 1.6. 证明 [[聚点的充要条件]]：设 $\vec{x}$ 是点集 $S(\subset \mathbb{R}^n)$ 的聚点的充分必要条件是：存在点列 $\{{\vec{x}_{K}}\}$ 满足 $\vec{x}_{k}\in S,\vec{x}_{k}\neq \vec{x}(k=1,2,\dots)$，使得 $\lim\limits_{k\to \infty}\vec{x}_{k}=\vec{x}$
+## 1.6. 证明 [[聚点的充要条件]]：设 $\boldsymbol{x}$ 是点集 $S(\subset \mathbb{R}^n)$ 的聚点的充分必要条件是：存在点列 $\{{\boldsymbol{x}_{k}}\}$ 满足 $\boldsymbol{x}_{k}\in S,\boldsymbol{x}_{k}\neq \boldsymbol{x}(k=1,2,\dots)$，使得 $\lim\limits_{k\to \infty}\boldsymbol{x}_{k}=\boldsymbol{x}$
 ?
 ***证明思路***
 必要性：
 1. 构造存在性的点列，用 $\delta=\dfrac{1}{k}$ 作为限制条件
 2. 得到点列，结论成立
 充分性：
-1. 反证法，假设 $\vec{x}$ 不是聚点，那么存在一个 $\vec{x}$ 的邻域是有限个数
-2. 但找不到一个点列可以无限逼近 $\vec{x}$，也就是不存在这样的点列 $\{{\vec{x}_{k}}\}$ 的极限为 $\vec{x}$，与前提矛盾，故原命题成立.
+3. 反证法，假设 $\boldsymbol{x}$ 不是聚点，那么存在一个 $\boldsymbol{x}$ 的邻域是有限个数
+4. 但找不到一个点列可以无限逼近 $\boldsymbol{x}$，也就是不存在这样的点列 $\{{\boldsymbol{x}_{k}}\}$ 的极限为 $\boldsymbol{x}$，与前提矛盾，故原命题成立.
 
 
 
@@ -58,8 +62,8 @@
 ***分析***
 这里容易产生概念混淆，开集的定义为：若 $S$ 中的每一个点都是它的内点，就称 $S$ 为**开集**. 也就是要证明 $S^o$ 是开集，就要证明 $S^o$ 中每个点都是它的内点
 ***证明思路***
-1. 取 $S^o$ 的一个点 $\vec{x}$，张开 $\vec{x}$ 的邻域，因为 $\vec{x}$ 是 $S$ 的内点，所以 $\vec{x}$ 的邻域也在 $S$ 中，接下来只要证明 $\vec{x}$ 的邻域也在 $S^o$ 中即可
-2. 任取 $\vec{y}\in O(\vec{x},\delta)$，有 $\vec{y}$ 的一个邻域 $O(\vec{y},\delta-|y-x|)$ 也在 $O(\vec{x},\delta)$ 之中，这意味着 $\vec{x}$ 的邻域中任取一个点 $\vec{y}$，邻域都还在 $S$ 之中，说明 $\vec{y}$ 也是 $S$ 的内点，因此 $\vec{x}$ 及其邻域 $O(x,\delta)$ 都在 $S^o$ 之中
+1. 取 $S^o$ 的一个点 $\boldsymbol{x}$，张开 $\boldsymbol{x}$ 的邻域，因为 $\boldsymbol{x}$ 是 $S$ 的内点，所以 $\boldsymbol{x}$ 的邻域也在 $S$ 中，接下来只要证明 $\boldsymbol{x}$ 的邻域也在 $S^o$ 中即可
+2. 任取 $\boldsymbol{y}\in O(\boldsymbol{x},\delta)$，有 $\boldsymbol{y}$ 的一个邻域 $O(\boldsymbol{y},\delta-|y-x|)$ 也在 $O(\boldsymbol{x},\delta)$ 之中，这意味着 $\boldsymbol{x}$ 的邻域中任取一个点 $\boldsymbol{y}$，邻域都还在 $S$ 之中，说明 $\boldsymbol{y}$ 也是 $S$ 的内点，因此 $\boldsymbol{x}$ 及其邻域 $O(x,\delta)$ 都在 $S^o$ 之中
 
 
 
@@ -75,7 +79,7 @@
 
 ## 1.11. 证明 [[Cantor闭区域套定理]]
 
-## 1.12. 举例说明：满足 $\lim\limits_{k\to \infty}|\vec{x}_{k+1}-\vec{x}_{k}|=0$ 的点列 $\vec{x}_{k}$ 不一定收敛
+## 1.12. 举例说明：满足 $\lim\limits_{k\to \infty}|\boldsymbol{x}_{k+1}-\boldsymbol{x}_{k}|=0$ 的点列 $\boldsymbol{x}_{k}$ 不一定收敛
 
 ## 1.13. 设 $E,F \subset \mathbb{R}^n$ 为紧集，证明 $E \cap F$ 和 $E \cup F$ 为紧集
 
