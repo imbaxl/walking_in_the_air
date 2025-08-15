@@ -3,12 +3,15 @@
 ---
 #flashcards/数学分析/陈纪修/第11章Euclid空间上的极限和连续 
 
+
+
 # 1. Euclid空间上的基本定理
 
 ## 1.1. 证明距离满足正定性、对称性和三角不等式
 ?
-***证明思路***
-根据 [[范数]] 的定义展开即可得证.
+<font color="#00b050">证明</font>
+
+
 
 
 
@@ -36,7 +39,7 @@
 （3）$S=\{{(x,y)\mid(x^2+y^2)(y^2-x^2-1)\leqslant 0 \}}$
 
 
-## 1.6. 证明 [[聚点的充要条件]]：设 $\boldsymbol{x}$ 是点集 $S(\subset \mathbb{R}^n)$ 的聚点的充分必要条件是：存在点列 $\{{\boldsymbol{x}_{k}}\}$ 满足 $\boldsymbol{x}_{k}\in S,\boldsymbol{x}_{k}\neq \boldsymbol{x}(k=1,2,\dots)$，使得 $\lim\limits_{k\to \infty}\boldsymbol{x}_{k}=\boldsymbol{x}$
+## 1.6. 证明聚点的充要条件：设 $\boldsymbol{x}$ 是点集 $S(\subset \mathbb{R}^n)$ 的聚点的充分必要条件是：存在点列 $\{{\boldsymbol{x}_{k}}\}$ 满足 $\boldsymbol{x}_{k}\in S,\boldsymbol{x}_{k}\neq \boldsymbol{x}(k=1,2,\dots)$，使得 $\lim\limits_{k\to \infty}\boldsymbol{x}_{k}=\boldsymbol{x}$
 ?
 ***证明思路***
 必要性：
@@ -71,13 +74,14 @@
 
 ## 1.9. 证明 $S \subset \mathbb{R}^n$ 的闭包 $\bar{S}=S \cup S'$ 必是闭集
 
+
 ## 1.10. 设 $E,F \subset \mathbb{R}^n$ ，若 $E$ 为开集， $F$ 为闭集，证明：$E\, \backslash F$ 为开集，$F\,\backslash E$ 为闭集
 ?
 ***证明思路***
 （1）$E \,\backslash \,F=E\cap F^c$，开集交开集仍然是开集
 （2）$F\,\backslash \,E=F\cap E^c$，闭集交闭集仍然是闭集
 
-## 1.11. 证明 [[Cantor闭区域套定理]]
+## 1.11. 证明 Cantor闭区域套定理
 
 ## 1.12. 举例说明：满足 $\lim\limits_{k\to \infty}|\boldsymbol{x}_{k+1}-\boldsymbol{x}_{k}|=0$ 的点列 $\boldsymbol{x}_{k}$ 不一定收敛
 
@@ -85,7 +89,7 @@
 
 ## 1.14. 用定义证明点集 $\{{0}\}\cup \{{\dfrac{1}{k}}\mid k=1,2,\dots\}$ 是 $R$ 中的紧集
 
-## 1.15. 应用 [[Heine-Borel有限覆盖定理]] 直接证明：$\mathbb{R}^n$ 上有界无限点集必有聚点
+## 1.15. 应用 Heine-Borel 有限覆盖定理直接证明：$\mathbb{R}^n$ 上有界无限点集必有聚点
 
 
 
