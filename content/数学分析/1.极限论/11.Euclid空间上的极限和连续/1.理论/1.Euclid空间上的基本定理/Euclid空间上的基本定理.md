@@ -103,7 +103,7 @@
 
 
 >[!dfn] 定义5（点列极限）
->设 $\boldsymbol{x}$ 是 $R^n$ 中的一个点列，若存在定点 $\boldsymbol{a}\in R^n$，对于任意给定的 $\epsilon>0$，存在正整数 $K$，使得当 $k>K$ 时，
+>设 $\boldsymbol{x}$ 是 $\mathbb{R}^n$ 中的一个点列，若存在定点 $\boldsymbol{a}\in \mathbb{R}^n$，对于任意给定的 $\epsilon>0$，存在正整数 $K$，使得当 $k>K$ 时，
 >$$
 >|\boldsymbol{x}_{k}-\boldsymbol{a}|<\epsilon 
 >$$
