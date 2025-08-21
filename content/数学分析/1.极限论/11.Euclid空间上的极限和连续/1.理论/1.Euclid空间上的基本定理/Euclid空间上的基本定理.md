@@ -186,6 +186,8 @@ $$
 >[!thm] 定理9（聚点的充要条件）
 >设 $\boldsymbol{x}$ 是点集 $S(\subset \mathbb{R}^n)$ 的聚点的充分必要条件是：存在点列 $\{{\boldsymbol{x}_{k}}\}$ 满足 $\boldsymbol{x}_{k}\in S,\boldsymbol{x}_{k}\neq \boldsymbol{x}(k=1,2,\dots)$，使得 $\lim\limits_{k\to \infty}\boldsymbol{x}_{k}=\boldsymbol{x}$
 
+^c27dff
+
 
 >[!prp] 例题10.1
 >在 $\mathbb{R}^2$ 上，设
@@ -262,7 +264,9 @@ $$
 
 
 >[!thm] 定理13（Bolzano-Weierstrass定理）
-> $\mathbb{R}^n$ 上的有界点列 $\{{\vec{x}_{k}}\}$  中必有收敛子列.
+> $\mathbb{R}^n$ 上的有界点列 $\{{\boldsymbol{x}_{k}}\}$  中必有收敛子列.
+
+^a086ac
 
 
 >[!cor] 推论14
@@ -278,7 +282,7 @@ $$
 
 
 >[!thm] 定理16（Cauchy 收敛原理）
->若 $\mathbb{R}^n$ 上的点列 $\{{\vec{x}_{k}}\}$ 收敛的充分必要条件是：$\{{\vec{x}_{k}}\}$ 为基本点列.
+>若 $\mathbb{R}^n$ 上的点列 $\boldsymbol{x}_k$ 收敛的充分必要条件是：$\{\boldsymbol{x}_{k}\}$ 为基本点列.
 
 
 
