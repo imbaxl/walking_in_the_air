@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"b8c789d16532fab8","x":-258,"y":-232,"width":238,"height":52,"type":"text","text":"找任意矩阵的相似标准型"},
+		{"id":"e8ea3b7530534bb0","x":159,"y":-360,"width":250,"height":60,"type":"text","text":"特征值排列在主对角元上的矩阵就是相似标准型"},
+		{"id":"48a079b28019b610","x":165,"y":-37,"width":250,"height":60,"type":"text","text":"确定Jordan标准型结构"},
+		{"id":"638e748533c82d4f","x":578,"y":47,"width":250,"height":60,"type":"text","text":""},
+		{"id":"a9fcfe856500fb38","x":578,"y":-108,"width":262,"height":50,"type":"text","text":"几何重数确定有几个Jordan块"},
+		{"id":"7d907e212da5ad6a","x":961,"y":-183,"width":259,"height":163,"type":"text","text":"特征矩阵（代入特征值的特征多项式的矩阵形式），用幂零性质最高次确保不会有更高次的非零块存在（比如 $A^2=O$ 就不可能存在 $3\\times 3$ 形状）"}
+	],
+	"edges":[
+		{"id":"6e19fcf3aea68915","fromNode":"b8c789d16532fab8","fromSide":"right","toNode":"e8ea3b7530534bb0","toSide":"left","label":"可对角化"},
+		{"id":"5af213778e806ea9","fromNode":"48a079b28019b610","fromSide":"right","toNode":"a9fcfe856500fb38","toSide":"left"},
+		{"id":"268bad542b21dfbd","fromNode":"b8c789d16532fab8","fromSide":"right","toNode":"48a079b28019b610","toSide":"left","label":"不可对角化"},
+		{"id":"438cb0fe2bdb2dbb","fromNode":"48a079b28019b610","fromSide":"right","toNode":"638e748533c82d4f","toSide":"left"},
+		{"id":"b15e99f48ce21e84","fromNode":"a9fcfe856500fb38","fromSide":"right","toNode":"7d907e212da5ad6a","toSide":"left"}
+	]
+}

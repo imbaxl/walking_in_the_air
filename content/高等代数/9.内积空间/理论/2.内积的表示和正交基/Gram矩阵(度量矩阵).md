@@ -3,6 +3,8 @@
 ---
 
 # 1. 定义
+
+
 >[!dfn] 定义： Gram（格列姆）矩阵，度量矩阵
 >设 $V$ 是欧式空间，有 $$(\alpha,\beta)=\left( \displaystyle\sum _{i=1}^na_{i}v_{i},\displaystyle\sum _{j=1}^nb_{j}v_{j}\right)=\displaystyle\sum _{i,j=1}^na_{i}g_{ij}b_{j}\tag{1}$$
 >其中 $(v_{i},v_{j})=g_{ij},(i,j=1,2,\dots,n)$，将其用矩阵表达：

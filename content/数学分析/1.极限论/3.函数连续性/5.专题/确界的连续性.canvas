@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"7129dc5c9c72d271","x":-385,"y":-320,"width":250,"height":60,"type":"text","text":"$M(x_{0}-0)=M(x_{0})$"},
+		{"id":"9db3cfb3cc698a71","x":-230,"y":-452,"width":250,"height":60,"color":"2","type":"text","text":"$M(x_{0}-0)\\geqslant M(x_{0})$ "},
+		{"id":"525db46e3b33675b","x":-540,"y":-452,"width":250,"height":60,"type":"text","text":"$M(x_{0}-0)\\leqslant M(x_{0})$ 单调性"},
+		{"id":"f2eebd25e781636a","x":-400,"y":-200,"width":280,"height":69,"color":"5","type":"text","text":"$M(x_{0}-0) = M(x_{0}) = M(x_{0}+0)$"},
+		{"id":"0d6cca6a67b7a875","x":-385,"y":-60,"width":250,"height":60,"type":"text","text":"$M(x_{0})=M(x_{0}+0)$"},
+		{"id":"1e041db8f6bf8d17","x":-540,"y":126,"width":250,"height":60,"color":"2","type":"text","text":"$M(x_{0}+0)\\leqslant M(x_{0})$"},
+		{"id":"e26fc1f660a0e840","x":-230,"y":126,"width":250,"height":60,"type":"text","text":"$M(x_{0})\\leqslant M(x_{0}+0)$ 单调性"},
+		{"id":"1facfd937a0c6ba6","x":-356,"y":-1020,"width":505,"height":60,"type":"text","text":"$\\lim\\limits_{x\\to x_0-}f(x)=f(x_{0})\\leqslant M(x_{0})\\leqslant \\lim\\limits_{x\\to x_0-}M(x)=M(x_{0}-0)$"},
+		{"id":"dbaea4893451e869","x":-290,"y":-755,"width":370,"height":215,"type":"text","text":"解读符号：\n$M(x_{0}-0)=\\lim\\limits_{x\\to x_0-}M(x)$\n$M(x_{0})=\\displaystyle\\sup_{a\\leqslant t \\leqslant x_{0}}f(t)$\n等价证明：\n$$M(x_{0}-0)\\geqslant \\displaystyle\\sup_{a\\leqslant t \\leqslant x_{0}}f(t)$$\n\n"},
+		{"id":"97e2d252745da903","x":-606,"y":-622,"width":250,"height":60,"type":"text","text":"单调性立即得到"},
+		{"id":"732122e4297cd9a5","x":160,"y":-468,"width":277,"height":92,"type":"text","text":"问题：\n1. 符号不直观，要进一步解读"},
+		{"id":"e2f48e54e5860f7f","x":-230,"y":260,"width":250,"height":60,"type":"text","text":"单调性立即得到"},
+		{"id":"24b65ab9e3419483","x":160,"y":-743,"width":440,"height":191,"type":"text","text":""},
+		{"id":"85c37f5657c280bc","x":-299,"y":-900,"width":389,"height":54,"type":"text","text":"与连续的 $f(x)$ 产生联系：$f(x)\\leqslant M(x)$"}
+	],
+	"edges":[
+		{"id":"3f325bb3fbc007b6","fromNode":"f2eebd25e781636a","fromSide":"top","toNode":"7129dc5c9c72d271","toSide":"bottom"},
+		{"id":"7ae08c477282b52b","fromNode":"f2eebd25e781636a","fromSide":"bottom","toNode":"0d6cca6a67b7a875","toSide":"top"},
+		{"id":"f82627b4a54e9fea","fromNode":"7129dc5c9c72d271","fromSide":"top","toNode":"9db3cfb3cc698a71","toSide":"bottom"},
+		{"id":"702859dbf67c32ee","fromNode":"7129dc5c9c72d271","fromSide":"top","toNode":"525db46e3b33675b","toSide":"bottom"},
+		{"id":"c08d92528ebe2f9f","fromNode":"0d6cca6a67b7a875","fromSide":"bottom","toNode":"e26fc1f660a0e840","toSide":"top"},
+		{"id":"a4e892497f2bc897","fromNode":"0d6cca6a67b7a875","fromSide":"bottom","toNode":"1e041db8f6bf8d17","toSide":"top"},
+		{"id":"c550adc400c85578","fromNode":"dbaea4893451e869","fromSide":"top","toNode":"85c37f5657c280bc","toSide":"bottom"},
+		{"id":"0e966f0d53913e92","fromNode":"85c37f5657c280bc","fromSide":"top","toNode":"1facfd937a0c6ba6","toSide":"bottom","label":"两边求极限"},
+		{"id":"df218de5c0affb68","fromNode":"9db3cfb3cc698a71","fromSide":"top","toNode":"dbaea4893451e869","toSide":"bottom"},
+		{"id":"b4f4c8b1f22440f8","fromNode":"dbaea4893451e869","fromSide":"right","toNode":"24b65ab9e3419483","toSide":"left"},
+		{"id":"5485860317aa1807","fromNode":"9db3cfb3cc698a71","fromSide":"right","toNode":"732122e4297cd9a5","toSide":"left"},
+		{"id":"13652eea6c61b5e4","fromNode":"525db46e3b33675b","fromSide":"top","toNode":"97e2d252745da903","toSide":"bottom"},
+		{"id":"78fbcf436ea60793","fromNode":"e26fc1f660a0e840","fromSide":"bottom","toNode":"e2f48e54e5860f7f","toSide":"top"}
+	]
+}
