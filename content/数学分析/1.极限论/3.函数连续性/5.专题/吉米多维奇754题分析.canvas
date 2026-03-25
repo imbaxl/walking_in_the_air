@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"题目中心节点000","type":"text","x":400,"y":0,"width":450,"height":180,"text":"# 吉米多维奇 754 题\n\n**证明：单调有界函数的一切间断点皆为第一类间断点**\n\n[[吉米多维奇连续性专题#1.8. 754 证明 单调有界函数的一切间断点皆为第一类间断点.|原题链接]]","color":"5"},
+		{"id":"条件1单调性0001","type":"text","x":0,"y":250,"width":280,"height":140,"text":"## 条件 1：单调性\n\n函数 $f(x)$ 单调\n- 单调递增：$x_1 < x_2 \\Rightarrow f(x_1) \\leq f(x_2)$\n- 或单调递减","color":"1"},
+		{"id":"条件2有界性0002","type":"text","x":320,"y":250,"width":280,"height":140,"text":"## 条件 2：有界性\n\n存在 $M > 0$，使得\n$$|f(x)| \\leq M$$\n对定义域内所有 $x$ 成立","color":"1"},
+		{"id":"结论第一类间断","type":"text","x":640,"y":250,"width":300,"height":160,"text":"## 结论：第一类间断点\n\n若 $x_0$ 是间断点，则：\n- 左极限 $f(x_0-0)$ 存在\n- 右极限 $f(x_0+0)$ 存在\n- 但 $f(x_0-0) \\neq f(x_0+0)$ 或函数在 $x_0$ 无定义","color":"4"},
+		{"id":"核心定理单调有","type":"text","x":80,"y":480,"width":350,"height":200,"text":"## 🔑 核心定理：单调有界原理\n\n**单调有界数列必有极限**\n\n应用于函数：\n- 若 $f(x)$ 单调递增且有界\n- 则当 $x \\to x_0^-$ 时，$\\{f(x)\\}$ 单调有界\n- 故 $f(x_0-0) = \\lim_{x \\to x_0^-} f(x)$ 存在\n- 同理 $f(x_0+0)$ 存在","color":"3"},
+		{"id":"间断点分类知识","type":"text","x":500,"y":480,"width":380,"height":280,"text":"## 📚 间断点分类\n\n### 第一类间断点\n- **跳跃间断点**：$f(x_0-0) \\neq f(x_0+0)$，两者都存在\n- **可去间断点**：$f(x_0-0) = f(x_0+0) \\neq f(x_0)$\n\n### 第二类间断点\n- 左极限或右极限至少有一个**不存在**\n- 无穷间断点\n- 振荡间断点（如 $\\sin \\frac{1}{x}$ 在 $x=0$）","color":"6"},
+		{"id":"证明策略总框架","type":"text","x":150,"y":800,"width":600,"height":220,"text":"## 🎯 证明策略框架\n\n### 策略：证明左右极限都存在\n\n1. **利用单调性**：构造单调数列 $\\{x_n\\}$（从左或右趋于 $x_0$）\n2. **利用有界性**：对应的函数值 $\\{f(x_n)\\}$ 单调有界\n3. **应用单调有界原理**：$\\{f(x_n)\\}$ 收敛，即极限存在\n4. **Heine 归结原理**：数列极限 = 函数极限\n5. **排除第二类**：左右极限都存在 → 非第二类 → 必为第一类","color":"2"},
+		{"id":"证明细节左极限","type":"text","x":-50,"y":1100,"width":380,"height":280,"text":"## 📝 证明细节 Part I\n### 左极限 $f(x_0-0)$ 存在\n\n**不失一般性，设 $f(x)$ 单调递增**\n\n1. 取数列 $x_n < x_0$，$x_n \\to x_0^-$\n2. 则 $\\{f(x_n)\\}$ 单调递增：\n   $$f(x_1) \\leq f(x_2) \\leq \\cdots \\leq f(x_n) \\leq \\cdots$$\n3. 有界性：$f(x_n) \\leq f(x_0+\\delta) \\leq M$\n4. 由单调有界原理：$\\lim_{n\\to\\infty} f(x_n)$ 存在\n5. 由 Heine 定理：$f(x_0-0)$ 存在","color":"3"},
+		{"id":"证明细节右极限","type":"text","x":380,"y":1100,"width":380,"height":280,"text":"## 📝 证明细节 Part II\n### 右极限 $f(x_0+0)$ 存在\n\n**同样设 $f(x)$ 单调递增**\n\n1. 取数列 $x_n > x_0$，$x_n \\to x_0^+$\n2. 则 $\\{f(x_n)\\}$ 单调递增（或有下界）：\n   $$f(x_1) \\geq f(x_2) \\geq \\cdots \\geq f(x_n) \\geq \\cdots$$\n3. 有界性：$f(x_n) \\geq f(x_0-\\delta) \\geq -M$\n4. 由单调有界原理：$\\lim_{n\\to\\infty} f(x_n)$ 存在\n5. 由 Heine 定理：$f(x_0+0)$ 存在","color":"3"},
+		{"id":"关键技巧汇总节","type":"text","x":820,"y":1100,"width":320,"height":320,"text":"## 💡 关键技巧\n\n### 1. 数列化\n将函数极限转化为数列极限\n\n### 2. 单调性传递\n函数单调 → 数列单调\n\n### 3. 有界性保持\n函数有界 → 数列有界\n\n### 4. Heine 归结原理\n$$\\lim_{x \\to x_0} f(x) = A$$\n等价于对任意 $x_n \\to x_0$，\n有 $f(x_n) \\to A$\n\n### 5. 排除法\n非第二类 → 第一类","color":"2"},
+		{"id":"相关知识链接1","type":"text","x":-100,"y":1450,"width":280,"height":140,"text":"## 🔗 相关知识\n\n### Heine 归结原理\n函数极限与数列极限的桥梁\n\n见：[[Heine 归结原理]]","color":"6"},
+		{"id":"相关知识链接2","type":"text","x":220,"y":1450,"width":280,"height":140,"text":"## 🔗 相关题目\n\n### 752 题类似技巧\n有界性 + 数列化\n\n[[吉米多维奇连续性专题#1.6. 752]]","color":"6"},
+		{"id":"相关知识链接3","type":"text","x":540,"y":1450,"width":280,"height":140,"text":"## 🔗 后续题目\n\n### 755 题：逆命题\n单调 + 取遍中值 → 连续\n\n[[吉米多维奇连续性专题#1.9. 755]]","color":"6"},
+		{"id":"反例理解加深节","type":"text","x":900,"y":800,"width":320,"height":240,"text":"## ❌ 反例理解\n\n### 为何需要\"有界\"？\n\n反例：$f(x) = \\frac{1}{x}$ 在 $(0, +\\infty)$\n- 单调递减 ✓\n- 但无界 ✗\n- 在 $x=0$ 处，$f(0+0) = +\\infty$\n- 这是第二类间断点（无穷）\n\n**有界性不可缺！**","color":"1"},
+		{"id":"总结提炼节点框","type":"group","x":-150,"y":1650,"width":1350,"height":280,"label":"🎓 核心总结","color":"5"},
+		{"id":"总结内容节点1","type":"text","x":-100,"y":1700,"width":600,"height":200,"text":"## 证明思路精髓\n\n**单调 + 有界 → 极限存在 → 第一类间断**\n\n1. 单调性保证数列单调\n2. 有界性保证数列有界\n3. 单调有界原理保证数列收敛\n4. Heine 定理保证函数极限存在\n5. 左右极限都存在 → 排除第二类 → 必为第一类","color":"5"},
+		{"id":"总结内容节点2","type":"text","x":540,"y":1700,"width":600,"height":200,"text":"## 本题核心价值\n\n✓ 深刻理解**间断点分类的本质**是看极限是否存在\n✓ 掌握**单调有界原理**在函数连续性中的应用\n✓ 熟练运用**Heine 归结原理**进行函数-数列转换\n✓ 体会**排除法**证明策略的优雅性","color":"5"}
+	],
+	"edges":[
+		{"id":"edge0001题到条件1","fromNode":"题目中心节点000","fromSide":"bottom","toNode":"条件1单调性0001","toSide":"top","label":"条件","color":"1"},
+		{"id":"edge0002题到条件2","fromNode":"题目中心节点000","fromSide":"bottom","toNode":"条件2有界性0002","toSide":"top","label":"条件","color":"1"},
+		{"id":"edge0003题到结论","fromNode":"题目中心节点000","fromSide":"bottom","toNode":"结论第一类间断","toSide":"top","label":"结论","color":"4"},
+		{"id":"edge0004条件到定理","fromNode":"条件1单调性0001","fromSide":"bottom","toNode":"核心定理单调有","toSide":"top","label":"引出","color":"3"},
+		{"id":"edge0005条件2到定理","fromNode":"条件2有界性0002","fromSide":"bottom","toNode":"核心定理单调有","toSide":"top","label":"配合","color":"3"},
+		{"id":"edge0006结论到分类","fromNode":"结论第一类间断","fromSide":"bottom","toNode":"间断点分类知识","toSide":"top","label":"理解","color":"6"},
+		{"id":"edge0007定理到策略","fromNode":"核心定理单调有","fromSide":"bottom","toNode":"证明策略总框架","toSide":"top","label":"应用","color":"2"},
+		{"id":"edge0008分类到策略","fromNode":"间断点分类知识","fromSide":"bottom","toNode":"证明策略总框架","toSide":"top","label":"目标","color":"2"},
+		{"id":"edge0009策略到左极限","fromNode":"证明策略总框架","fromSide":"bottom","toNode":"证明细节左极限","toSide":"top","label":"Part I","color":"3"},
+		{"id":"edge0010策略到右极限","fromNode":"证明策略总框架","fromSide":"bottom","toNode":"证明细节右极限","toSide":"top","label":"Part II","color":"3"},
+		{"id":"edge0011策略到技巧","fromNode":"证明策略总框架","fromSide":"right","toNode":"关键技巧汇总节","toSide":"top","label":"技巧","color":"2"},
+		{"id":"edge0012策略到反例","fromNode":"证明策略总框架","fromSide":"right","toNode":"反例理解加深节","toSide":"left","label":"反例","color":"1"},
+		{"id":"edge0013左到链接1","fromNode":"证明细节左极限","fromSide":"bottom","toNode":"相关知识链接1","toSide":"top","label":"依据","color":"6"},
+		{"id":"edge0014右到链接2","fromNode":"证明细节右极限","fromSide":"bottom","toNode":"相关知识链接2","toSide":"top","label":"参考","color":"6"},
+		{"id":"edge0015技巧到链接3","fromNode":"关键技巧汇总节","fromSide":"bottom","toNode":"相关知识链接3","toSide":"top","label":"延伸","color":"6"},
+		{"id":"edge0016左到总结1","fromNode":"证明细节左极限","fromSide":"bottom","toNode":"总结内容节点1","toSide":"top","fromEnd":"none","toEnd":"arrow"},
+		{"id":"edge0017右到总结1","fromNode":"证明细节右极限","fromSide":"bottom","toNode":"总结内容节点1","toSide":"top","fromEnd":"none","toEnd":"arrow"},
+		{"id":"edge0018技巧到总结2","fromNode":"关键技巧汇总节","fromSide":"bottom","toNode":"总结内容节点2","toSide":"top","fromEnd":"none","toEnd":"arrow"}
+	]
+}

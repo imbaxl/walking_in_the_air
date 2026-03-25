@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"69638212badccf8b","x":48,"y":-329,"width":400,"height":400,"type":"file","file":"高等代数/9.内积空间/理论/1.内积空间的概念/内积(点积).md"},
+		{"id":"e2199dd27257f782","x":-176,"y":-141,"width":136,"height":61,"type":"text","text":"[[内积空间]]"},
+		{"id":"872cbc7f8e60686a","x":-350,"y":-335,"width":250,"height":60,"type":"text","text":"[[引入内积空间的动机]]"}
+	],
+	"edges":[
+		{"id":"6f9eae930236c5df","fromNode":"872cbc7f8e60686a","fromSide":"right","toNode":"e2199dd27257f782","toSide":"top"},
+		{"id":"62e187da42140acb","fromNode":"e2199dd27257f782","fromSide":"right","toNode":"69638212badccf8b","toSide":"left"}
+	]
+}

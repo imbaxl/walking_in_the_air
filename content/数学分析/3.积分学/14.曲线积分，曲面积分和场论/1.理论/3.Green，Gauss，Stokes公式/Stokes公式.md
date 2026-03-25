@@ -1,5 +1,5 @@
 ---
-{}
+tags: 数学分析
 ---
 >[!thm] 定理：Stokes公式
 >设 $\Sigma$ 为光滑曲面，其边界 $\partial \Sigma$ 为分段光滑闭曲线，若函数 $P(x,y,z)$，$Q(x,y,z)$，$R(x,y,z)$ 在 $\Sigma$ 及其边界 $\partial \Sigma$ 上具有连续偏导数，则成立
